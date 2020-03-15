@@ -169,11 +169,19 @@ async function init(){
         // then Finsished creating Employees.
         } else if (createEmployee === false) {
             console.log("Finished creating employees..."+ "You have " + employees.length + " employees." );
-            exit = true;
+            exit = false;
         };
     }
     while (exit === true);
-    console.log(employees);
+    // create variable of Html from render method
+    const teamHTML = await render(employees);
+    // pass teamHTML to write file function. fs.writeFile out puts 'team.html' in 'output' folder
+    fs.writeFile(outputPath, teamHTML, function(err) {
+        if (err) {
+          return console.log("Something went wrong.");
+        }
+        console.log("Success!");
+      });
     // console.log("end: " + exit);
     // console.log("Finished creating employees..."+ "You have " + employees.length + " employees." );
 }
