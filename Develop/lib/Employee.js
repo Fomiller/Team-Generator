@@ -8,25 +8,26 @@ class Employee {
     }
     // getName() method
     getName() {
-        console.log(this.name)
+        return (this.name);
     }
     // getId() Method
     getId() {
-        console.log(this.id)
+        return (this.id);
     }
     // getEmail() method
     getEmail() {
-        console.log(this.email)
+        return (this.email);
     }
     // getRole() method
     getRole() {
-        console.log(this.role)
+        return (this.role);
     }
 }
 
-var jeff = new Employee("jeff", 1, "test@test.com");
+// var jeff = new Employee("jeff", 1, "test@test.com");
+var jeff = new Employee("jeff");
 // console.log(jeff);
-// jeff.getRole();
+jeff.getName();
 
 
 

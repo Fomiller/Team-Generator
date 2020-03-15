@@ -9,7 +9,7 @@ class Intern extends Employee{
     }
     // getSchool method
     getSchool() {
-        console.log(this.school)
+        return (this.school);
     };
 }
 
