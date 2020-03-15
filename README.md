@@ -6,7 +6,7 @@
 ## Description
 The Team Generator is a Node CLI that allows employers to create a static HTML page containing a list of all their employees. Each employee is created inside a card, which displays unique information and styling base on their role, e.g. "Manager", "Engineer", "Intern".
 
-<img src="./Assets/Team-Gen_01.png" alt="Team Generator App"  width="75%"/>
+<img src="./Assets/Team-Gen_01.PNG" alt="Team Generator App"  width="75%"/>
 
 ## Table of Contents
 * [Installation](#Installation)
@@ -22,7 +22,7 @@ To install The Team Generator create a clone of the repository on your local sys
 ## Usage
 To use the Team Generator navigate to the root directory within your CLI and type "node app.js". Once the app is running follow the prompts to create your employees.
 
-<img src="./Assets/Team-Gen_04.png" alt="Team Generator CLI"/>
+<img src="./Assets/Team-Gen_04.PNG" alt="Team Generator CLI"/>
 
 ## License
 MIT
