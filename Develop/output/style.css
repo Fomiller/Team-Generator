@@ -1,0 +1,23 @@
+.intern{
+    background-color: dodgerblue;
+}
+
+.engineer {
+    background-color: aquamarine;
+}
+
+.manager {
+    background-color: crimson;
+}
+
+.employee-card {
+    box-shadow: 5px 7px 15px 0px rgba(0,0,0,0.4);
+    border: none;
+}
+
+.team-heading {
+    background-color: teal;
+    color: white;
+    border-radius: 0rem;
+    box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.4);
+}
