@@ -104,16 +104,15 @@ async function init(){
     ]
     // Array of employees, starts empty
     const employees = []; 
-    // create a variable that stores a yes/no value from questions[0]
-    const ask = await inquirer.prompt(questions[0]);
-    // deconstruct ask
-    const { createEmployee } = ask;
     // make another employee
-    let exit = false;
-    console.log(exit)
+    var exit = true;
     // if createEmployee === true,
     // then you are prompted what role this employee will have
-    // do {
+    do {
+        // create a variable that stores a yes/no value from questions[0]
+        const ask = await inquirer.prompt(questions[0]);
+        // deconstruct ask
+        const { createEmployee } = ask;
         if (createEmployee === true) {
             const type = await inquirer.prompt(questions[1]);
             const { role } = type;
@@ -170,9 +169,11 @@ async function init(){
         // then Finsished creating Employees.
         } else if (createEmployee === false) {
             console.log("Finished creating employees..."+ "You have " + employees.length + " employees." );
+            exit = true;
         };
-    // }
-    // while (exit = false);
+    }
+    while (exit === true);
+    console.log(employees);
     // console.log("end: " + exit);
     // console.log("Finished creating employees..."+ "You have " + employees.length + " employees." );
 }
