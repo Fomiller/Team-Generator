@@ -21,3 +21,19 @@
     border-radius: 0rem;
     box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.4);
 }
+
+.btn-manager {
+    background-color: crimson;
+    min-width: 90px;
+}
+.btn-engineer {
+    background-color: aquamarine;
+    min-width: 90px;
+}
+.btn-intern {
+    background-color: dodgerblue;
+    min-width: 90px;
+}
+.btn-all {
+    min-width: 90px;
+}
