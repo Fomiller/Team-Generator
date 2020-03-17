@@ -22,7 +22,7 @@ async function init(){
     {
         type: "list",
         name: "role",
-        message: "Whatis the Role of the Employee?",
+        message: "What is the Role of the Employee?",
         choices: [
             {name: "Intern", checked: false},
             {name: "Engineer", checked: false},
